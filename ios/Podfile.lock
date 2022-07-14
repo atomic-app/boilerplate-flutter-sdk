@@ -1,0 +1,29 @@
+PODS:
+  - atomic_sdk_flutter (0.25.1):
+    - AtomicSDK
+    - Flutter
+  - AtomicSDK (0.21.0)
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - atomic_sdk_flutter (from `.symlinks/plugins/atomic_sdk_flutter/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  https://github.com/atomic-app/action-cards-ios-sdk-specs.git:
+    - AtomicSDK
+
+EXTERNAL SOURCES:
+  atomic_sdk_flutter:
+    :path: ".symlinks/plugins/atomic_sdk_flutter/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  atomic_sdk_flutter: dddb873eac8e3bca27c09f596440a08c52499118
+  AtomicSDK: 0479dc42cbf13d9704f8a8a45f57cded1a2233b2
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+
+PODFILE CHECKSUM: 5ae7ee145624b1569530bf54e6aaa2ddd7172047
+
+COCOAPODS: 1.11.2
