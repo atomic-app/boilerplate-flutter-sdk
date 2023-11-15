@@ -9,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({required this.title, super.key});
   final String title;
 
   @override
@@ -32,44 +32,59 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool _loggedIn = false;
+
   Future<bool> onLogin() async {
-    AACSession.setApiBaseUrl(AtomicConfiguration.apiUrl);
-    AACSession.initialise(
-        AtomicConfiguration.environmentId, AtomicConfiguration.apiKey);
+    await AACSession.setApiBaseUrl(AtomicConfiguration.apiUrl);
+    await AACSession.initialise(
+      AtomicConfiguration.environmentId,
+      AtomicConfiguration.apiKey,
+    );
+    await AACSession.setSessionDelegate(MySessionDelegate());
+    //await Future.delayed(Duration(seconds: 5)); // for testing loading.
     return true;
   }
 
   @override
+  void initState() {
+    onLogin().then((value) {
+      setState(() {
+        _loggedIn = value;
+      });
+    });
+    // Atomic SDK redirects errors/exceptions to the FlutterError.onError pipeline
+    FlutterError.onError = print;
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: onLogin(),
-      builder: (context, AsyncSnapshot<bool> snapshot) {
+    final screenSize = MediaQuery.of(context).size;
 
-        if (! snapshot.hasData) {
-          return CircularProgressIndicator();
-        }
-
-        return Scaffold(
-          appBar: AppBar(
-            title: Text(widget.title),
+    if (!_loggedIn) {
+      return const CircularProgressIndicator();
+    }
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(
+                width: screenSize.width,
+                height: screenSize.height * 0.8,
+                child: AACStreamContainer(
+                  configuration: AtomicConfiguration.configuration,
+                  containerId: AtomicConfiguration.containerId,
+                ),
+              ),
+            ],
           ),
-          body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height - 200,
-                    child: AACStreamContainer(
-                      configuration: AtomicConfiguration.configuration,
-                      containerId: AtomicConfiguration.containerId,
-                      sessionDelegate: MySessionDelegate(),
-                    )),
-              ],
-            ),
-          ),
-        );
-      },
+        ),
+      ),
     );
   }
 }
