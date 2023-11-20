@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.atomic.atomic_sdk_flutter" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="21" />
+7-->/Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+9-->/Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:4:3-74
+9-->/Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:4:20-72
+10
+11</manifest>

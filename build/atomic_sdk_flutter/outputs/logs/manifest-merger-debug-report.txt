@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:2:3-41
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:4:3-74
+	android:name
+		ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml:4:20-72
+uses-sdk
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+		ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+		ADDED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/williambryant/.pub-cache/git/atomic-sdk-flutter-releases-02801e682ddc3d745ae7ff1b3ff7231446743d1a/android/src/main/AndroidManifest.xml

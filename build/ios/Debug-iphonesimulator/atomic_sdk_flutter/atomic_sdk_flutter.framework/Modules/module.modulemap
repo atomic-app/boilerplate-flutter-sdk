@@ -1,0 +1,6 @@
+framework module atomic_sdk_flutter {
+  umbrella header "atomic_sdk_flutter-umbrella.h"
+
+  export *
+  module * { export * }
+}
