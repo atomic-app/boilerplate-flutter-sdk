@@ -15,7 +15,7 @@ dependencies:
   atomic_sdk_flutter:
     git:
       url: git@github.com:atomic-app/atomic-sdk-flutter-releases.git
-      ref: 0.2.0
+      ref: 1.0.0
 
   cupertino_icons: ^1.0.2
 
