@@ -12,6 +12,13 @@
 /ios/RunnerTests/
 /ios/Flutter/
 
+# Keys
+jwtRS512.key.pub
+assets/jwtRS512.key
+
+# ENV
+*.env
+
 # Miscellaneous
 *.class
 *.log

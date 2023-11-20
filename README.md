@@ -1,7 +1,12 @@
-# Atomic SDK Boilerplate Project
+# Multiple Containers Demo App
 
-<img width="940" alt="Screen Shot 2022-07-15 at 3 38 29 PM" src="https://user-images.githubusercontent.com/1093520/179145709-0dd04939-57e1-4630-85de-bd0e62149559.png">
+The first demo app for Atomic.io. This app is to demonstrate the impact having a complex Flutter implementation of the Atomic SDK can have on the app's performance and user experience. It has many containers, state changes, and animations.
 
-This is a minimal project which aims to show how to setup Atomic SDK using Flutter SDK.
+In the app root directory, remember to create a `.env` file with the following set:
+```
+API_KEY=''
+API_URL=''
+USER_ID=''
+```
 
-For information about settings and Atomic SDK usage, read [Atomic Flutter SDK Documentation](https://documentation.atomic.io/sdks/flutter).
+Also, remember to place the generated `jwtRS512.key` file in an assets folder in the app root directory like this: `assets/jwtRS512.key`

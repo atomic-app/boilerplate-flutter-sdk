@@ -1,8 +1,7 @@
-source 'https://github.com/atomic-app/action-cards-ios-sdk-specs.git'
-source 'https://github.com/CocoaPods/Specs.git'
-
 # Uncomment this line to define a global platform for your project
 # platform :ios, '11.0'
+source 'https://github.com/atomic-app/action-cards-ios-sdk-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
